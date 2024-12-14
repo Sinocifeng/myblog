@@ -2,7 +2,7 @@
 
 关于我的Page：https://sinocifeng.github.io/
 
-这是我曾经练习的一个博客项目，按照b站视频 BV1nE411r7TF 进行学习搭建。
+这是我曾经练习的一个博客项目，按照b站视频 [BV1nE411r7TF](https://www.bilibili.com/video/BV1nE411r7TF/?vd_source=73f685f6515c8bcbc3bff2f9e7fd032d) 进行学习搭建。
 当然，在按照其思路基础上，我还查找相关资料，将该网站放到了阿里云服务器上，并成功运行了一年。
 后来，由于考研，服务器也就放弃续费了。
 在该项目学习过程中，也遇到很多问腿，比如springboot2.0和该视频中springboot1.0版本不匹配导致相同的语句执行却出现问题，进行了大量的排查
