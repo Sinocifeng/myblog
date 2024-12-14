@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--移动端预览设置-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+    <!--引入semantic-UI框架-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="./css/me.css">
+</head>
+<body>
+
+    <!--导航部分-->
+    <nav class="ui inverted attached segment m-shadow-small">                  <!--属性：ui表明是一个ui组件   inverted是反转的意思，如果不填默认为白色，填了为黑色 attached表明依附，贴在上面   segment指是一个片段-->
+        <div class="ui container">                              <!--属性：container使得Blog这一header不至于太靠左（调整位置）-->
+            <div class="ui inverted secondary stackable menu m-padded-tb-mini" >  <!--stackable:可堆叠，屏幕小时候可以堆叠在一起，从而适应手机端；   m开头表示自定义，自定义这样一个class-->
+                <h2 class="ui teal header item">Blog</h2>       <!--属性：teal为颜色 headr为效果 item代表menu里面的每个条目-->
+                <a href="#" class="active m-item item m-mobil-hide"><i class="mini home icon"></i> &nbsp&nbsp首页</a>
+                <a href="#" class="m-item item m-mobil-hide"><i class="mini idea icon"></i> &nbsp分类</a>
+                <a href="#" class="m-item item m-mobil-hide"><i class="mini tags icon"></i> &nbsp&nbsp标签</a>
+                <a href="#" class="m-item item m-mobil-hide"><i class="mini clone icon"></i> &nbsp&nbsp归档</a>
+                <a href="#" class="m-item item m-mobil-hide"><i class="mini info icon"></i> &nbsp关于我</a>
+                <div class="right m-item item m-mobil-hide">
+                    <div class="ui icon transparent inverted input">         <!--transparent:透明，取背景色-->
+                        <input type="text" placeholder="search....">
+                        <i class="search link icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--手机端不显示导航页面，只有在点击button时候才显示出来-->
+        <a href="#" class="ui menu toggle black icon button m-right-top m-mobil-show">   <!--menu toggle:无显示意义，为了获取到button触发事件-显示导航栏内容-->
+            <i class="sidebar icon"></i>
+        </a>
+    </nav>
+    <!--中间内容-->
+    <div class="m-container m-padded-tb-big">
+        <div class="ui container">
+            <div class="ui stackable grid">
+                <!--左侧内容-->
+                <div class="eleven wide column">
+                    <!--header-->
+                    <div class="ui top attached segment">
+                        <div class="ui middle aligned two column grid">
+                            <div class="column">
+                                <h3 class="ui teal header">博客</h3>
+                            </div>
+                            <div class="right aligned column">
+                                共 <h2 class="ui orange header m-inline-block m-text-thin">14</h2> 篇
+                            </div>
+                        </div>
+                    </div>
+                    <!--body-->
+                    <div class="ui attached segment">
+
+                        <div class="ui vertical segment m-padded-tb-large">
+                            <div class="ui padded mobile reversed stackable grid">         <!--mobile reversed:手机端反转，将eleven和five这两列反转，从而使得图片在上而不是在下-->
+                                <!--文章部分-->
+                                <div class="eleven wide column">
+                                    <h3 class="ui header">超越妹妹要和你聊一聊什么是财富自由？</h3>
+                                    <p class="m-text">简单地说：你的资产产生的被动收入至少等于或超过你的日常开支，你的投资收入可以覆盖家庭的各项开支，你可以有更多的选择，提前退休或者干自己喜欢的工作，有更多的时间休闲或是到世界各地旅游。当你对自己的金钱熟知，你的金钱跟你一样具有了自己的品性，你已经完全可以胜任自己的金钱了，你自由了。</p>
+                                    <div class="ui grid">
+                                        <div class="eleven wide column">
+                                            <div class="ui horizontal mini link list">       <!--link list组件，与底部footer使用一致，但这里要横着用，horizontal表示横起来-->
+                                                <div class="item">
+                                                    <img src="./images/chaoyue002.jpg" alt="" class="ui avatar image">     <!--avatar:表示一张圆形小图片-->
+                                                    <div class="content">                <!--用content在图片后面添加一些文字-->
+                                                        <a href="#" class="header m-opacity-mini">Sinocifengs</a>
+                                                    </div>
+                                                </div>
+                                                <div class="item">
+                                                    <i class="calendar icon"></i>2020-12-11
+                                                </div>
+                                                <div class="item">
+                                                    <i class="eye icon"></i>783
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="right aligned five wide column">
+                                            <a href="#" target="_blank" class="ui teal basic label m-padded-mini m-text-thin">认知升级</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--图片部分-->
+                                <div class="five wide column">
+                                    <a href="#" target="_blank">
+                                        <img src="./images/chaoyue001.jpg" alt="" class="ui rounded image">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui vertical segment m-padded-tb-large">
+                            <div class="ui padded mobile reversed stackable grid">         <!--mobile reversed:手机端反转，将eleven和five这两列反转，从而使得图片在上而不是在下-->
+                                <!--文章部分-->
+                                <div class="eleven wide column">
+                                    <h3 class="ui header">超越妹妹要和你聊一聊什么是财富自由？</h3>
+                                    <p class="m-text">简单地说：你的资产产生的被动收入至少等于或超过你的日常开支，你的投资收入可以覆盖家庭的各项开支，你可以有更多的选择，提前退休或者干自己喜欢的工作，有更多的时间休闲或是到世界各地旅游。当你对自己的金钱熟知，你的金钱跟你一样具有了自己的品性，你已经完全可以胜任自己的金钱了，你自由了。</p>
+                                    <div class="ui grid">
+                                        <div class="eleven wide column">
+                                            <div class="ui horizontal mini link list">       <!--link list组件，与底部footer使用一致，但这里要横着用，horizontal表示横起来-->
+                                                <div class="item">
+                                                    <img src="./images/chaoyue002.jpg" alt="" class="ui avatar image">     <!--avatar:表示一张圆形小图片-->
+                                                    <div class="content">                <!--用content在图片后面添加一些文字-->
+                                                        <a href="#" class="header m-opacity-mini">Sinocifengs</a>
+                                                    </div>
+                                                </div>
+                                                <div class="item">
+                                                    <i class="calendar icon"></i>2020-12-11
+                                                </div>
+                                                <div class="item">
+                                                    <i class="eye icon"></i>783
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="right aligned five wide column">
+                                            <a href="#" target="_blank" class="ui teal basic label m-padded-mini m-text-thin">认知升级</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--图片部分-->
+                                <div class="five wide column">
+                                    <a href="#" target="_blank">
+                                        <img src="./images/chaoyue001.jpg" alt="" class="ui rounded image">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui vertical segment m-padded-tb-large">
+                            <div class="ui padded mobile reversed stackable grid">         <!--mobile reversed:手机端反转，将eleven和five这两列反转，从而使得图片在上而不是在下-->
+                                <!--文章部分-->
+                                <div class="eleven wide column">
+                                    <h3 class="ui header">超越妹妹要和你聊一聊什么是财富自由？</h3>
+                                    <p class="m-text">简单地说：你的资产产生的被动收入至少等于或超过你的日常开支，你的投资收入可以覆盖家庭的各项开支，你可以有更多的选择，提前退休或者干自己喜欢的工作，有更多的时间休闲或是到世界各地旅游。当你对自己的金钱熟知，你的金钱跟你一样具有了自己的品性，你已经完全可以胜任自己的金钱了，你自由了。</p>
+                                    <div class="ui grid">
+                                        <div class="eleven wide column">
+                                            <div class="ui horizontal mini link list">       <!--link list组件，与底部footer使用一致，但这里要横着用，horizontal表示横起来-->
+                                                <div class="item">
+                                                    <img src="./images/chaoyue002.jpg" alt="" class="ui avatar image">     <!--avatar:表示一张圆形小图片-->
+                                                    <div class="content">                <!--用content在图片后面添加一些文字-->
+                                                        <a href="#" class="header m-opacity-mini">Sinocifengs</a>
+                                                    </div>
+                                                </div>
+                                                <div class="item">
+                                                    <i class="calendar icon"></i>2020-12-11
+                                                </div>
+                                                <div class="item">
+                                                    <i class="eye icon"></i>783
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="right aligned five wide column">
+                                            <a href="#" target="_blank" class="ui teal basic label m-padded-mini m-text-thin">认知升级</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--图片部分-->
+                                <div class="five wide column">
+                                    <a href="#" target="_blank">
+                                        <img src="./images/chaoyue001.jpg" alt="" class="ui rounded image">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui vertical segment m-padded-tb-large">
+                            <div class="ui padded mobile reversed stackable grid">         <!--mobile reversed:手机端反转，将eleven和five这两列反转，从而使得图片在上而不是在下-->
+                                <!--文章部分-->
+                                <div class="eleven wide column">
+                                    <h3 class="ui header">超越妹妹要和你聊一聊什么是财富自由？</h3>
+                                    <p class="m-text">简单地说：你的资产产生的被动收入至少等于或超过你的日常开支，你的投资收入可以覆盖家庭的各项开支，你可以有更多的选择，提前退休或者干自己喜欢的工作，有更多的时间休闲或是到世界各地旅游。当你对自己的金钱熟知，你的金钱跟你一样具有了自己的品性，你已经完全可以胜任自己的金钱了，你自由了。</p>
+                                    <div class="ui grid">
+                                        <div class="eleven wide column">
+                                            <div class="ui horizontal mini link list">       <!--link list组件，与底部footer使用一致，但这里要横着用，horizontal表示横起来-->
+                                                <div class="item">
+                                                    <img src="./images/chaoyue002.jpg" alt="" class="ui avatar image">     <!--avatar:表示一张圆形小图片-->
+                                                    <div class="content">                <!--用content在图片后面添加一些文字-->
+                                                        <a href="#" class="header m-opacity-mini">Sinocifengs</a>
+                                                    </div>
+                                                </div>
+                                                <div class="item">
+                                                    <i class="calendar icon"></i>2020-12-11
+                                                </div>
+                                                <div class="item">
+                                                    <i class="eye icon"></i>783
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="right aligned five wide column">
+                                            <a href="#" target="_blank" class="ui teal basic label m-padded-mini m-text-thin">认知升级</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--图片部分-->
+                                <div class="five wide column">
+                                    <a href="#" target="_blank">
+                                        <img src="./images/chaoyue001.jpg" alt="" class="ui rounded image">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui vertical segment m-padded-tb-large">
+                            <div class="ui padded mobile reversed stackable grid">         <!--mobile reversed:手机端反转，将eleven和five这两列反转，从而使得图片在上而不是在下-->
+                                <!--文章部分-->
+                                <div class="eleven wide column">
+                                    <h3 class="ui header">超越妹妹要和你聊一聊什么是财富自由？</h3>
+                                    <p class="m-text">简单地说：你的资产产生的被动收入至少等于或超过你的日常开支，你的投资收入可以覆盖家庭的各项开支，你可以有更多的选择，提前退休或者干自己喜欢的工作，有更多的时间休闲或是到世界各地旅游。当你对自己的金钱熟知，你的金钱跟你一样具有了自己的品性，你已经完全可以胜任自己的金钱了，你自由了。</p>
+                                    <div class="ui grid">
+                                        <div class="eleven wide column">
+                                            <div class="ui horizontal mini link list">       <!--link list组件，与底部footer使用一致，但这里要横着用，horizontal表示横起来-->
+                                                <div class="item">
+                                                    <img src="./images/chaoyue002.jpg" alt="" class="ui avatar image">     <!--avatar:表示一张圆形小图片-->
+                                                    <div class="content">                <!--用content在图片后面添加一些文字-->
+                                                        <a href="#" class="header m-opacity-mini">Sinocifengs</a>
+                                                    </div>
+                                                </div>
+                                                <div class="item">
+                                                    <i class="calendar icon"></i>2020-12-11
+                                                </div>
+                                                <div class="item">
+                                                    <i class="eye icon"></i>783
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="right aligned five wide column">
+                                            <a href="#" target="_blank" class="ui teal basic label m-padded-mini m-text-thin">认知升级</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--图片部分-->
+                                <div class="five wide column">
+                                    <a href="#" target="_blank">
+                                        <img src="./images/chaoyue001.jpg" alt="" class="ui rounded image">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui vertical segment m-padded-tb-large">
+                            <div class="ui padded mobile reversed stackable grid">         <!--mobile reversed:手机端反转，将eleven和five这两列反转，从而使得图片在上而不是在下-->
+                                <!--文章部分-->
+                                <div class="eleven wide column">
+                                    <h3 class="ui header">超越妹妹要和你聊一聊什么是财富自由？</h3>
+                                    <p class="m-text">简单地说：你的资产产生的被动收入至少等于或超过你的日常开支，你的投资收入可以覆盖家庭的各项开支，你可以有更多的选择，提前退休或者干自己喜欢的工作，有更多的时间休闲或是到世界各地旅游。当你对自己的金钱熟知，你的金钱跟你一样具有了自己的品性，你已经完全可以胜任自己的金钱了，你自由了。</p>
+                                    <div class="ui grid">
+                                        <div class="eleven wide column">
+                                            <div class="ui horizontal mini link list">       <!--link list组件，与底部footer使用一致，但这里要横着用，horizontal表示横起来-->
+                                                <div class="item">
+                                                    <img src="./images/chaoyue002.jpg" alt="" class="ui avatar image">     <!--avatar:表示一张圆形小图片-->
+                                                    <div class="content">                <!--用content在图片后面添加一些文字-->
+                                                        <a href="#" class="header m-opacity-mini">Sinocifengs</a>
+                                                    </div>
+                                                </div>
+                                                <div class="item">
+                                                    <i class="calendar icon"></i>2020-12-11
+                                                </div>
+                                                <div class="item">
+                                                    <i class="eye icon"></i>783
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="right aligned five wide column">
+                                            <a href="#" target="_blank" class="ui teal basic label m-padded-mini m-text-thin">认知升级</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--图片部分-->
+                                <div class="five wide column">
+                                    <a href="#" target="_blank">
+                                        <img src="./images/chaoyue001.jpg" alt="" class="ui rounded image">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--左侧底部footer-->
+                    <div class="ui bottom attached segment">
+                        <div class="ui middle aligned two column grid">
+                            <div class="column">
+                                <a href="#" class="ui mini teal basic button">上一页</a>
+                            </div>
+                            <div class="right aligned column">
+                                <a href="#" class="ui mini teal basic button">下一页</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--右侧cards（卡片）-->
+                <div class="five wide column">
+
+                    <!--分类-->
+                    <div class="ui segments">
+                        <div class="ui secondary segment">      <!--secondary在该组件下为加一层灰色，其他组件不一定-->
+                            <div class="ui two column grid">
+                                <div class="column">
+                                    <i class="idea icon"></i>分类
+                                </div>
+                                <div class="right aligned column">
+                                    <a href="#" target="_blank">more <i class="angle double right icon"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui teal segment">
+                            <div class="ui fluid vertical menu">    <!--fluid:填充外层容器-->
+                                <a href="#" class="item">
+                                    学习日志
+                                    <div class="ui teal basic left pointing label">13</div>     <!--left pointing:左侧小三角-->
+                                </a>
+                                <a href="#" class="item">
+                                    学习日志
+                                    <div class="ui teal basic left pointing label">13</div>     <!--left pointing:左侧小三角-->
+                                </a>
+                                <a href="#" class="item">
+                                    学习日志
+                                    <div class="ui teal basic left pointing label">13</div>     <!--left pointing:左侧小三角-->
+                                </a>
+                                <a href="#" class="item">
+                                    学习日志
+                                    <div class="ui teal basic left pointing label">13</div>     <!--left pointing:左侧小三角-->
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--标签-->
+                    <div class="ui segments m-margin-top-large">
+                        <div class="ui secondary segment">      <!--secondary在该组件下为加一层灰色，其他组件不一定-->
+                            <div class="ui two column grid">
+                                <div class="column">
+                                    <i class="tags icon"></i>标签
+                                </div>
+                                <div class="right aligned column">
+                                    <a href="#" target="_blank">more <i class="angle double right icon"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui teal segment">
+                            <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
+                                方法论
+                               <div class="detail">23</div>     <!--detail：描述-->
+                            </a>
+                            <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
+                                方法论
+                                <div class="detail">23</div>     <!--detail：描述-->
+                            </a>
+                            <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
+                                方法论
+                                <div class="detail">23</div>     <!--detail：描述-->
+                            </a>
+                            <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
+                                方法论
+                                <div class="detail">23</div>     <!--detail：描述-->
+                            </a>
+                            <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
+                                方法论
+                                <div class="detail">23</div>     <!--detail：描述-->
+                            </a>
+                            <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
+                                方法论
+                                <div class="detail">23</div>     <!--detail：描述-->
+                            </a>
+                            <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
+                                方法论
+                                <div class="detail">23</div>     <!--detail：描述-->
+                            </a>
+                            <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
+                                方法论
+                                <div class="detail">23</div>     <!--detail：描述-->
+                            </a>
+                            <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
+                                方法论
+                                <div class="detail">23</div>     <!--detail：描述-->
+                            </a>
+                            <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
+                                方法论
+                                <div class="detail">23</div>     <!--detail：描述-->
+                            </a>
+                        </div>
+
+                    </div>
+                    <!--最新推荐-->
+                    <div class="ui segments m-margin-top-large">
+                        <div class="ui secondary segment">      <!--secondary在该组件下为加一层灰色，其他组件不一定-->
+                            <i class="bookmark icon"></i>最新推荐
+                        </div>
+                        <div class="ui segment">
+                            <a href="#" target="_blank" class="m-black">我的故事</a>
+                        </div>
+                        <div class="ui segment">
+                            <a href="#" target="_blank" class="m-black">我的故事</a>
+                        </div>
+                        <div class="ui segment">
+                            <a href="#" target="_blank" class="m-black">我的故事</a>
+                        </div>
+                        <div class="ui segment">
+                            <a href="#" target="_blank" class="m-black">我的故事</a>
+                        </div>
+                        <div class="ui segment">
+                            <a href="#" target="_blank" class="m-black">我的故事</a>
+                        </div>
+                        <div class="ui segment">
+                            <a href="#" target="_blank" class="m-black">我的故事</a>
+                        </div>
+                    </div>
+
+                    <!--二维码-->
+                    <h4 class="ui horizontal divider header m-margin-top-large">扫码关注我</h4>       <!--divider:分割线-->
+                    <div class="ui centered card" style="width: 11em">
+                        <img src="./static/images/mywechat.jpg" alt="" class="ui rounded image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <!--底部footer-->
+    <footer class="ui inverted vertical segment m-padded-tb-massive">       <!--vertical:垂直的，无圆角-->
+        <div class="ui center aligned container">
+            <div class="ui inverted divided stackable grid">
+                <div class="three wide column">
+                    <div class="ui inverted link list">
+                        <div class="item">
+                            <img src="./images/mywechat.jpg" class="ui rounded image" alt="" style="width: 110px">
+                        </div>
+                    </div>
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header m-text-spaced m-opacity-mini">最新博客</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">用户故事</a>
+                        <a href="#" class="item">关于可以练习的清单</a>
+                        <a href="#" class="item">失败要趁早</a>
+                    </div>
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header m-text-spaced m-opacity-mini">联系我</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">Email:taozi.n@qq.com</a>
+                        <a href="#" class="item">QQ:1459736568</a>
+                    </div>
+                </div>
+                <div class="seven wide column">
+                    <h4 class="ui inverted header m-text-spaced m-opacity-mini">Sinocifengs</h4>
+                    <p class="m-text-thin m-text-spaced m-opacity-mini">天朗气清，我们至少还有一个活下去的理由！</p>
+                </div>
+            </div>
+            <div class="ui inverted section divider"></div>
+            <p class="m-text-thin m-text-spaced m-opacity-tiny">Copyright © 2020-2021 MyBlog Designed by Sinocifengs</p>
+        </div>
+    </footer>
+    <!--通过CDN 引入jquery和semantic-UI框架的js文件-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <script>
+        $('.menu.toggle').click(function () {
+            <!--jquery的方法toggleClass，像开关一样，点击如果有某样式则去除，如果没有某样式则添加-->
+            $('.m-item').toggleClass('m-mobil-hide');
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

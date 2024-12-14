@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--移动端预览设置-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>博客详情</title>
+    <!--引入semantic-UI框架-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="./css/typo.css"/>
+    <link rel="stylesheet" href="./lib/tocbot/tocbot.css">
+    <link rel="stylesheet" href="./css/me.css">
+</head>
+<body>
+
+    <!--导航部分-->
+    <nav class="ui inverted attached segment m-shadow-small">                  <!--属性：ui表明是一个ui组件   inverted是反转的意思，如果不填默认为白色，填了为黑色 attached表明依附，贴在上面   segment指是一个片段-->
+        <div class="ui container">                              <!--属性：container使得Blog这一header不至于太靠左（调整位置）-->
+            <div class="ui inverted secondary stackable menu m-padded-tb-mini" >  <!--stackable:可堆叠，屏幕小时候可以堆叠在一起，从而适应手机端；   m开头表示自定义，自定义这样一个class-->
+                <h2 id="blog-h2" class="ui teal header item">Blog</h2>       <!--属性：teal为颜色 headr为效果 item代表menu里面的每个条目-->
+                <a href="#" class="m-item item m-mobil-hide"><i class="mini home icon"></i> &nbsp&nbsp首页</a>
+                <a href="#" class="m-item item m-mobil-hide"><i class="mini idea icon"></i> &nbsp分类</a>
+                <a href="#" class="m-item item m-mobil-hide"><i class="mini tags icon"></i> &nbsp&nbsp标签</a>
+                <a href="#" class="m-item item m-mobil-hide"><i class="mini clone icon"></i> &nbsp&nbsp归档</a>
+                <a href="#" class="m-item item m-mobil-hide"><i class="mini info icon"></i> &nbsp关于我</a>
+                <div class="right m-item item m-mobil-hide">
+                    <div class="ui icon transparent inverted input">         <!--transparent:透明，取背景色-->
+                        <input type="text" placeholder="search....">
+                        <i class="search link icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--手机端不显示导航页面，只有在点击button时候才显示出来-->
+        <a href="#" class="ui menu toggle black icon button m-right-top m-mobil-show">   <!--menu toggle:无显示意义，为了获取到button触发事件-显示导航栏内容-->
+            <i class="sidebar icon"></i>
+        </a>
+    </nav>
+    <!--中间内容-->
+    <div id="waypoint" class="m-container-small m-padded-tb-big animate__animated animate__fadeIn">
+        <div class="ui container">
+            <div class="ui top attached segment">
+                <div class="ui horizontal link list">       <!--link list组件，与底部footer使用一致，但这里要横着用，horizontal表示横起来-->
+                    <div class="item">
+                        <img src="./images/chaoyue002.jpg" alt="" class="ui avatar image">     <!--avatar:表示一张圆形小图片-->
+                        <div class="content">                <!--用content在图片后面添加一些文字-->
+                            <a href="#" class="header m-opacity-mini">Sinocifengs</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <i class="calendar icon"></i>2020-12-11
+                    </div>
+                    <div class="item">
+                        <i class="eye icon"></i>783
+                    </div>
+                </div>
+            </div>
+            <!--图片区域-->
+            <div class="ui attached segment">
+                <img src="./images/chaoyue001.jpg" alt="" class="ui fluid rounded image">   <!--fluid:表示充满整个外层容器+-->
+            </div>
+            <!--文章内容-->
+            <div class="ui attached padded segment ">
+                <div class="ui right aligned basic segment">    <!--basic segment：不显示外侧边线-->
+                    <div class="ui orange basic label">原创</div>
+                </div>
+                <div class="js-toc-content">
+                    <h2 id="title-h2" class="ui center aligned header">超越妹妹：什么是财务自由？</h2>
+                    <br>
+                    <div id="content" class="typo typo-selection m-padded-lr-reponsive m-padded-tb-large">
+                        <p>
+                            其实很多时候，“财务自由”只是一个伪概念，很多人都在计算拥有多少钱才能实现财务自由，是几千万？还是几个亿？没有一个正确答案。对于有些人来说，拥有几百万就够一辈子财务自由了，对于有些人来说，有一两个亿都不够在深圳前海买个喜欢的别墅。
+                        </p>
+                        <h2 id="no1-h2">1</h2>
+                        <p>
+                            财务自由只是相对的，我们所理解的财务自由就是不再以工作，作为获得收入的唯一手段，有足够的时间和金钱去做自己真正想做的的事情。简单理解大概就是当你不工作的时候，也有其他渠道的现金收入，也不必为金钱发愁。但是这个始终跟你的欲望挂钩，如果你能够控制住自己的欲望，那么财务自由相对容易达到。如果你欲望无极限，那再多钱也很难财务自由。
+                        </p>
+                        <h2 id="no2-h2">2</h2>
+                        <p>
+                            “只有实现财务自由，才有资格和世界谈价格。”现在很多人的想法就是赚很多很多钱，去实现财务自由，有目标是好事，但是思路错了。我们要看自己赚的钱是不是持续的，是不是能有涨幅的，毕竟普涨的工资是跑不过通货膨胀的，如果收入不能持续涨，只会让你离财富自由越来越远。所以我们最需要的是，自己的工作能力，和不断赚取复利的能力。
+                        </p>
+                        <h2 id="no3-h2">2</h2>
+                        <p>
+                            就比如，把一千万给不同的人，有的人就不能实现财务自由，而有的人就可以做到。
+                        </p>
+                        <h2 id="no4-h2">4</h2>
+                        <p>
+                            一千万到手了以后，得先买个豪车开着吧，几百万没了；带女朋友去香港多买些好看的包包，几十万又没了；出入各种高级场所，几天就又没了好几万。后面还要各种消费，养车等，用不了几年，一千万就不够花了。
+                        </p>
+                        <h2 id="no5-h2">5</h2>
+                        <p>
+                            但是如果你有能力，不需要你像巴菲特、索罗斯他们那样，平均年化收益达到20%—30%。这1000千万，你只要能有年均10%的年化收益的能力，第一年就能赚100万，十年以后你的财富就可以达到2590万，三十年以后就能拥有1.74亿。说白了，你一千万存银行定期也有个5%的年化收益，一年就是50万利息，对于很多人来说也是足够的。
+                        </p>
+                        <h2 id="no6-h2">6</h2>
+                        <p>
+                            然而，现在大多在一线城市的年轻人，如果不靠家庭资助，一个月赚1.5万左右，不吃不喝，在市区平均房价7、8万/平米以上的情况下，要工作10年才能付首付，贷款买套非常普通的80平米的房子。然而买房后还要背上月供两万多的贷款压力，这还没有算上通货膨胀、房价上涨等可能导致买不起的因素。那还谈什么财务自由？
+                        </p>
+                        <h2 id="no7-h2">总结</h2>
+                        <p>
+                            所以不管买房还是消费，都要量力而行，想要实现相对的财务自由，首先要学会控制自己的欲望，建立对自己的认知，然后要不断提高自己的能力，我们无法预测未来，但是我们可以塑造未来的自己。努力工作，好好理财，学习投资，不断给自己充电，对自己充满信心，梦想就可能成真！关注事成财经，学投资理财，祝所有投资人心想事成！
+                        </p>
+                    </div>
+                </div>
+                    <!--标签-->
+                <div class="m-padded-lr-reponsive">
+                    <div class="ui basic teal left pointing label">方法论</div>
+                </div>
+                    <!--赞赏-->
+                <div class="ui center aligned basic segment">
+                    <button id="payButton" class="ui orange basic circular button">赞赏</button>            <!--circular:较大的圆角样式-->
+                </div>
+                <div class="ui payQR flowing popup transition hidden">
+                    <div class="ui orange basic label">
+                        <div class="ui images" style="font-size: inherit !important;">  <!--images默认字体大小为0，即不允许图片中写入文字，这里inherit表示字体大小继承上一级(label)大小-->
+                            <div class="image">
+                                <img src="./images/wecheatPay.jpg" alt="" class="ui rounded bordered image" style="width: 120px">
+                                <div>微信</div>
+                            </div>
+                            <div class="image">
+                                <img src="./images/myAlipay.jpg" alt="" class="ui rounded bordered image" style="width: 120px">
+                                <div>支付宝</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--信息说明-->
+            <div class="ui attached positive message">
+                <div class="ui middle aligned grid">
+                    <div class="eleven wide column">
+                        <ul class="list">
+                            <li>作者：Sinocifengs（联系作者）</li>
+                            <li>发表时间：2020-12-12 22:56</li>
+                            <li>版权声明：自由转载-非商用-非衍生-保持署名（创意共享3.0许可证）</li>
+                            <li>公众号转载：请在文末添加作者公众号二维码</li>
+                        </ul>
+                    </div>
+                    <div class="five wide column">
+                        <img src="./images/mywechat.jpg" alt="" class="ui right floated rounded boardered image" style="width: 110px">
+                    </div>
+                </div>
+            </div>
+            <!--留言区域-->
+            <div id="comment-container" class="ui bottom attached segment">
+                <!--留言区域列表-->
+                <div class="ui teal segment">
+                    <div class="ui comments">
+                        <h3 id="comments-h3" class="ui dividing header">Comments</h3>
+                        <div class="comment">
+                            <a class="avatar">
+                                <img src="./images/chaoyue002.jpg" style="width: 25px">
+                            </a>
+                            <div class="content">
+                                <a class="author">Matt</a>
+                                <div class="metadata">
+                                    <span class="date">Today at 5:42PM</span>
+                                </div>
+                                <div class="text">
+                                    How artistic!
+                                </div>
+                                <div class="actions">
+                                    <a class="reply">回复</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment">
+                            <a class="avatar">
+                                <img src="./images/chaoyue002.jpg" style="width: 25px">
+                            </a>
+                            <div class="content">
+                                <a class="author">Elliot Fu</a>
+                                <div class="metadata">
+                                    <span class="date">Yesterday at 12:30AM</span>
+                                </div>
+                                <div class="text">
+                                    <p>This has been very useful for my research. Thanks as well!</p>
+                                </div>
+                                <div class="actions">
+                                    <a class="reply">回复</a>
+                                </div>
+                            </div>
+                            <div class="comments">
+                                <div class="comment">
+                                    <a class="avatar">
+                                        <img src="./images/chaoyue002.jpg" style="width: 25px">
+                                    </a>
+                                    <div class="content">
+                                        <a class="author">Jenny Hess</a>
+                                        <div class="metadata">
+                                            <span class="date">Just now</span>
+                                        </div>
+                                        <div class="text">
+                                            Elliot you are always so right :)
+                                        </div>
+                                        <div class="actions">
+                                            <a class="reply">回复</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment">
+                            <a class="avatar">
+                                <img src="./images/chaoyue002.jpg" style="width: 25px">
+                            </a>
+                            <div class="content">
+                                <a class="author">Joe Henderson</a>
+                                <div class="metadata">
+                                    <span class="date">5 days ago</span>
+                                </div>
+                                <div class="text">
+                                    Dude, this is awesome. Thanks so much
+                                </div>
+                                <div class="actions">
+                                    <a class="reply">回复</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--留言提交区域-->
+                <div class="ui form">
+                    <div class="field">
+                        <textarea name="content" placeholder="请输入评论信息...."></textarea>
+                    </div>
+                    <div class="fields">
+                        <div class="field m-mobil-wide m-margin-bottom-small">
+                            <div class="ui left icon input">
+                                <i class="user icon"></i>
+                                <input type="text" name="nickname" placeholder="姓名">
+                            </div>
+                        </div>
+                        <div class="field m-mobil-wide m-margin-bottom-small">
+                            <div class="ui left icon input">
+                                <i class="mail icon"></i>
+                                <input type="text" name="email" placeholder="邮箱">
+                            </div>
+                        </div>
+                        <div class="field m-mobil-wide m-margin-bottom-small">
+                            <button class="ui teal button m-mobil-wide m-margin-bottom-mini"><i class="edit icon"></i>发布</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--右侧小工具条-->
+    <div id="toolbar" class="m-padded m-fixed m-right-bottom" style="display: none">
+        <div class="ui vertical icon buttons">
+            <button class="ui toc button teal button" type="button">目录</button>
+            <a href="#comment-container" class="ui teal button">留言</a>
+            <button class="ui wechat icon button"><i class="weixin icon"></i></button>
+            <div id="toTop-button" class="ui icon button"><i class="chevron up icon"></i></div>
+        </div>
+    </div>
+
+    <div class="ui toc-container flowing popup transition hidden" style="width: 250px">
+        <!--生成的目录-->
+        <ol class="js-toc">
+        </ol>
+    </div>
+    <div id="qrcode" class="ui wechat-qr flowing popup transition hidden" style="width: 130px !important;">
+<!--        <img src="./images/mywechat.jpg" alt="" class="ui rounded image" style="width: 120px">-->
+    </div>
+
+
+    <br>
+    <br>
+    <!--底部footer-->
+    <footer class="ui inverted vertical segment m-padded-tb-massive">       <!--vertical:垂直的，无圆角-->
+        <div class="ui center aligned container">
+            <div class="ui inverted divided stackable grid">
+                <div class="three wide column">
+                    <div class="ui inverted link list">
+                        <div class="item">
+                            <img src="./images/mywechat.jpg" class="ui rounded image" alt="" style="width: 110px">
+                        </div>
+                    </div>
+                </div>
+                <div class="three wide column">
+                    <h4 id="tail1-h4" class="ui inverted header m-text-spaced m-opacity-mini">最新博客</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">用户故事</a>
+                        <a href="#" class="item">关于可以练习的清单</a>
+                        <a href="#" class="item">失败要趁早</a>
+                    </div>
+                </div>
+                <div class="three wide column">
+                    <h4 id="tail2-h4" class="ui inverted header m-text-spaced m-opacity-mini">最新博客</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">Email:taozi.n@qq.com</a>
+                        <a href="#" class="item">QQ:1459736568</a>
+                    </div>
+                </div>
+                <div class="seven wide column">
+                    <h4 id="tail3-h4" class="ui inverted header m-text-spaced m-opacity-mini">Sinocifengs</h4>
+                    <p class="m-text-thin m-text-spaced m-opacity-mini">天朗气清，我们至少还有一个活下去的理由！</p>
+                </div>
+            </div>
+            <div class="ui inverted section divider"></div>
+            <p class="m-text-thin m-text-spaced m-opacity-tiny">Copyright © 2020-2021 MyBlog Designed by Sinocifengs</p>
+        </div>
+    </footer>
+    <!--通过CDN 引入jquery和semantic-UI框架的js文件-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <script src="./lib/tocbot/tocbot.min.js"></script>
+    <script src="./lib/qrcode/qrcode.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
+    <script src="./lib/waypoints/jquery.waypoints.min.js"></script>
+    <script>
+        $('.menu.toggle').click(function () {
+            <!--jquery的方法toggleClass，像开关一样，点击如果有某样式则去除，如果没有某样式则添加-->
+            $('.m-item').toggleClass('m-mobil-hide');
+        });
+
+        $('#payButton').popup({
+            <!--通过payQR和popup定位到相应区域-->
+            popup: $('.payQR.popup'),       <!--popup:弹出窗口-->
+            on : 'click',
+            position : 'bottom center'
+        });
+
+        tocbot.init({
+            // Where to render the table of contents.               （生成的目录放在哪里）
+            tocSelector: '.js-toc',
+            // Where to grab the headings to build the table of contents.   （哪部分内容需要生成目录）
+            contentSelector: '.js-toc-content',
+            // Which headings to grab inside of the contentSelector element.
+            headingSelector: 'h1, h2, h3',
+            // For headings inside relative or absolute positioned containers within content.
+            hasInnerContainers: true,
+        });
+
+        $('.toc.button').popup({
+            <!--通过toc button和popup定位到相应区域-->
+            popup: $('.toc-container.popup'),       <!--popup:弹出窗口-->
+            on : 'click',
+            position : 'left center'
+        });
+
+        $('.wechat').popup({
+            popup : $('.wechat-qr'),
+            // on: 'hover',
+            position:'left center'
+        });
+
+        var qrcode = new QRCode("qrcode", {       <!--承载二维码的id-->
+            <!--生成二维码-->
+            text: "http://jindo.dev.naver.com/collie",
+            width: 110,
+            height: 110,
+            colorDark : "#000000",
+            colorLight : "#ffffff",
+            correctLevel : QRCode.CorrectLevel.H
+        });
+
+        $('#toTop-button').click(function () {
+            $(window).scrollTo(0,500);
+        });
+
+        var waypoint = new Waypoint({                   <!--滚动侦测-->
+            element: document.getElementById('waypoint'),
+            handler: function(direction) {
+                if (direction == 'down'){
+                    $('#toolbar').show(100);
+                }else {
+                    $('#toolbar').hide(100);        <!--500ms隐藏-->
+                }
+                console.log('Scrolled to waypoint! ' + direction)
+            }
+        })
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
